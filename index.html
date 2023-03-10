@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Header-->
+    <div class="topnav">
+      <h1>Server-Side APIs Challenge Weather Dashboard</h1>
+    </div>
+    <div class="container">
+      <div class="left-section">
+        <div class="clear">
+          <p class="label">Search for a city:</p>
+          <button id="clear_storage">clear</button>
+        </div>
+
+        <div class="search-section">
+          <input
+            placeholder="Enter city name : "
+            id="search-input"
+            name="search"
+          />
+
+          <button type="submit" id="btnSearch">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <ul class="list-group-flush" id="city-list">
+          <li class="list-group-item"></li>
+        </ul>
+      </div>
+
+      <div class="right-section">
+        <div>
+          <div id="city-name-with-current-weather">
+            <h1>City Name Will Come Here :</h1>
+            <img />
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+        <div>5 Day Forecast :</div>
+        <div class="city-name-with-5--days-forecast">
+          <div class="day">
+            <h2></h2>
+            <img />
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--dayjs for time keeping-->
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
+    <!--javascript file-->
+    <script src="script.js"></script>
+  </body>
+</html>

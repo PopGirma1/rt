@@ -1,0 +1,141 @@
+html {
+    overflow-y: scroll;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    width: 25%;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    background: #f1f1f1;
+    width: 60%;
+}
+
+#btnSearch {
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+    width: 30%;
+}
+
+
+.list-group-flush {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    background-color: darkgray;
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.list-group-item:hover {
+    background-color: white
+}
+
+li {
+    text-decoration: none;
+
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 70%;
+}
+
+#city-name-with-current-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid gray;
+    padding: 40px;
+    width: auto;
+}
+
+.city-name-with-5--days-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.future-day {
+    padding: 40px;
+    border: 2px solid gray;
+
+}
+
+.city-name-with-5--days-forecast .day:empty {
+    background-color: #fff;
+}
+
+.label {
+    font-size: 34px;
+}
+
+#clear_storage {
+    background-color: #dc8383;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.day{
+    background-color:gray;
+    padding: 12px;
+}
